@@ -31,3 +31,34 @@ switch (empCheck1) {
 }
 let empWage = empHrs * WAGE_PER_HR;
 console.log("Daily Wage : " + empWage);
+
+//UC3
+function getWorkinghours(empCheck) {
+  switch (empCheck1) {
+    case IS_PART_TIME:
+      console.log("Part_Time Employee");
+      return PART_TIME_HRS;
+    case IS_FULL_TIME:
+      console.log("Full_Time Employee");
+      return FULL_TIME_HRS;
+    default:
+      console.log("Employee is absent");
+      return 0;
+  }
+}
+const PART_TIME_HRS = 4;
+const FULL_TIME_HRS = 8;
+const WAGE_PER_HR = 20;
+const NUM_OF_WORKING_DAYS = 20;
+const MAX_HRS_IN_MONTH = 160;
+
+function getWorkinghours(empCheck) {
+  switch (empCheck) {
+    case IS_PART_TIME:
+      return PART_TIME_HRS;
+    case IS_FULL_TIME:
+      return FULL_TIME_HRS;
+    default:
+      return 0;
+  }
+}
