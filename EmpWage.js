@@ -62,3 +62,16 @@ function getWorkinghours(empCheck) {
       return 0;
   }
 }
+
+//UC4
+for (let day = 0; day < NUM_OF_WORKING_DAYS; day++) {
+  let empCheck = Math.floor(Math.random() * 10) % 3;
+  empHrs += getWorkinghours(empCheck);
+}
+let empWage = empHrs * WAGE_PER_HR;
+console.log(
+  "Total Employee working Hours :" +
+    empHrs +
+    " Total Employee Wage : " +
+    empWage
+);
